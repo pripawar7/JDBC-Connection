@@ -1,0 +1,5 @@
+CREATE USER 'accountdb_user'@'localhost' IDENTIFIED BY 'spring';
+
+GRANT ALL PRIVILEGES ON cs548_account.* TO 'accountdb_user'@'localhost' WITH GRANT OPTION;
+
+SHOW GRANTS FOR 'accountdb_user'@'localhost';
